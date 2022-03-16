@@ -11,7 +11,7 @@
 
 <script>
   import Giphy from 'giphy-js-sdk-core';
-  const client = Giphy('GIPHY_API_KEY');
+  const client = Giphy('iVaof9h1KMnkGcZ1sv8AgKbB1u9GAfwz');
 
   export default {
     name: 'App',
