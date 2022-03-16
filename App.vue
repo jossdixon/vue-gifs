@@ -12,6 +12,7 @@
 <script>
   import Giphy from 'giphy-js-sdk-core';
   const client = Giphy('iVaof9h1KMnkGcZ1sv8AgKbB1u9GAfwz');
+  import GifItem from './components/GifItem.vue';
 
   export default {
     name: 'App',
