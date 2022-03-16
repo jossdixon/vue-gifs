@@ -1,7 +1,9 @@
 <template>
     <view>
-        <scroll-view class="scroll-view">
-            <gif-item v-for="gif in gifs" :gif="gif" :key="gif.id" v-if="!loading" />
+        <scroll-view class="scroll-view" >
+            <div v-if="!loading">
+              <gif-item v-for="gif in gifs" :gif="gif" :key="gif.id" />
+            </div>
             <view class="loading-container" :style="{flex: 1, justifyContent: 'center'}" v-if="loading">
               <activity-indicator size="large" color="#0000ff"></activity-indicator>
             </view>
