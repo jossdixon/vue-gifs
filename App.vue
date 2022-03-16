@@ -1,7 +1,7 @@
 <template>
     <view>
         <scroll-view class="scroll-view">
-            <!-- TODO: Create gif item and header -->
+            <gif-item v-for="gif in gifs" :gif="gif" :key="gif.id" v-if="!loading" />
             <view class="loading-container" :style="{flex: 1, justifyContent: 'center'}" v-if="loading">
               <activity-indicator size="large" color="#0000ff"></activity-indicator>
             </view>
@@ -25,7 +25,9 @@
     async created() {
       const response = await client.trending('gifs', {limit: 20});
       this.gifs = response.data;
+      this.loading = false;
     },
+    components: { GifItem }
   };
 </script>
 
