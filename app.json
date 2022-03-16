@@ -3,7 +3,7 @@
     "name": "vue-gifs",
     "slug": "vue-gifs",
     "version": "1.0.0",
-    "sdkVersion": "37.0.3",
+    "sdkVersion": "44.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
