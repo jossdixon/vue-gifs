@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'Header.vue'
+    name: 'header.vue'
   };
 </script>
 
